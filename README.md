@@ -1,4 +1,4 @@
-# MADE-FInal-Submission
+# MADE-Final-Submission
 A Final Project From Dicoding Academy - MADE (Menjadi Android Developer Expert)
 
 # Description
