@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Favorite Movie Catalogue</string>
+    <string name="title_movie">FILM</string>
+    <string name="title_tv_show">ACARA TV</string>
+</resources>

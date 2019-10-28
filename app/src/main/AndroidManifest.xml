@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nand_project.moviecatalogue">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.notifikasi.NotifikasiActivity"></activity>
+        <activity android:name=".activity.cari.CariActivity" />
+        <activity android:name=".activity.favorit.FavoritActivity" />
+        <activity android:name=".activity.detail.DetailActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".provider.MovieFavContentProvider"
+            android:authorities="com.nand_project.moviecatalogue.provider"
+            android:exported="true"
+            android:permission="com.nand_project.moviecatalogue.provider.READ_WRITE" />
+        <provider
+            android:name=".provider.TvShowFavContentProvider"
+            android:authorities="com.nand_project.moviecatalogue.provider.tv"
+            android:exported="true"
+            android:permission="com.nand_project.moviecatalogue.provider.READ_WRITE" />
+
+        <receiver android:name=".widget.movie.MovieFavouriteWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/image_banner_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.movie.MovieStackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <activity
+            android:name=".notification.SettingPref"
+            android:parentActivityName=".MainActivity" />
+
+        <receiver
+            android:name=".notification.MovieDailyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".notification.MovieUpcomingReceiver"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+    <permission android:name="com.nand_project.moviecatalogue.provider.READ_WRITE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+</manifest>

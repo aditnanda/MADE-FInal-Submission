@@ -1,0 +1,32 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Movie Catalogue</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="change_language_settings">Change Language Settings</string>
+    <string name="title_movie">MOVIES</string>
+    <string name="title_tv_show">TV SHOWS</string>
+
+    <string name="language">en-US</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="title">Title</string>
+    <string name="release_date">Release Date</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="popularity">Popularity</string>
+    <string name="overview">Overview</string>
+    <string name="date">2019-08-01</string>
+    <string name="rating">7.1/10</string>
+    <string name="favorite">Favorite</string>
+    <string name="pencarian">Search</string>
+    <string name="hint_cari">enter text here</string>
+    <string name="empty_text">No data</string>
+    <string name="notif">Notification</string>
+    <string name="summary_daily_reminder">Daily reminder every 7 oclock in the morning</string>
+    <string name="summary_release_reminder">Daily movie release information reminder at 8 am</string>
+    <string name="key_lang">key_lang</string>
+    <string name="pref_title_notifications">Notification</string>
+    <string name="key_today_reminder">key_today_reminder</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="key_release_reminder">key_release_reminder</string>
+    <string name="release_reminder">New Movie Reminder</string>
+
+</resources>
